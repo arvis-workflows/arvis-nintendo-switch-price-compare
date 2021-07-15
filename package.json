@@ -1,6 +1,6 @@
 {
   "name": "arvis-nintendo-switch-price-compare",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Compare nintendo switch game's price by https://eshop-prices.com/",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,11 @@
     "preuninstall": "arvish-cleanup",
     "prepublishOnly": "arvish-prepublish"
   },
+  "files": [
+    "**.js",
+    "arvis-workflow.json",
+    "icon.png"
+  ],
   "keywords": [
     "arvis",
     "arvish",
@@ -25,7 +30,6 @@
     "got": "^11.8.2"
   },
   "devDependencies": {
-    "arvish-test": "^0.1.0",
     "jest": "^27.0.6"
   }
 }
