@@ -1,0 +1,42 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+    "creator": "jopemachine",
+    "name": "arvis-nintendo-switch-price-compare",
+    "enabled": true,
+    "description": "Compare nintendo switch game's price by https://eshop-prices.com/",
+    "readme": "",
+    "version": "0.0.4",
+    "webAddress": "https://github.com/arvis-workflows/arvis-nintendo-switch-price-compare",
+    "defaultIcon": "icon.png",
+    "variables": {
+        "currency": "EN"
+    },
+    "commands": [
+        {
+            "type": "scriptFilter",
+            "title": "Nintendo switch prices compare",
+            "command": "nsp",
+            "scriptFilter": "node list.js {query}",
+            "runningSubtext": "Hold on a sec until script work is done...",
+            "argType": "optional",
+            "withspace": true,
+            "actions": [
+                {
+                    "type": "scriptFilter",
+                    "title": "Prices",
+                    "scriptFilter": "node prices.js {query}",
+                    "runningSubtext": "Hold on a sec until script work is done...",
+                    "argType": "required",
+                    "withspace": false,
+                    "actions": [
+                        {
+                            "type": "clipboard",
+                            "modifiers": "normal",
+                            "text": "{query}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
