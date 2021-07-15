@@ -1,15 +1,16 @@
-# arvis-vimawesome
+# arvis-nintendo-switch-price-compare
+
+Compare Nintendo Switch game prices by country through https://eshop-prices.com/
 
 ![](./demo1.png)
 
 ![](./demo2.png)
 
-> Compare nintendo switch game's price by https://eshop-prices.com/
 
 ## Install
 
 ```
-$ npm install --global arvis-vimawesome
+$ npm install --global arvis-nintendo-switch-price-compare
 ```
 
 ## Icon source
