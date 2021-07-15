@@ -3,7 +3,7 @@
     "creator": "jopemachine",
     "name": "arvis-nintendo-switch-price-compare",
     "enabled": true,
-    "description": "Compare nintendo switch game's price by https://eshop-prices.com/",
+    "description": "Compare Nintendo Switch game prices by country through https://eshop-prices.com/",
     "readme": "",
     "version": "0.0.5",
     "webAddress": "https://github.com/arvis-workflows/arvis-nintendo-switch-price-compare",
