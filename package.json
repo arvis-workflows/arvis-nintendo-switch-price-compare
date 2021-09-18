@@ -1,6 +1,6 @@
 {
   "name": "arvis-nintendo-switch-price-compare",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Compare Nintendo Switch game prices by country through https://eshop-prices.com/",
   "main": "index.js",
   "scripts": {

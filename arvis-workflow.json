@@ -5,11 +5,11 @@
     "enabled": true,
     "description": "Compare Nintendo Switch game prices by country through https://eshop-prices.com/",
     "readme": "",
-    "version": "0.0.6",
+    "version": "0.1.0",
     "webAddress": "https://github.com/arvis-workflows/arvis-nintendo-switch-price-compare",
     "defaultIcon": "icon.png",
     "variables": {
-        "countryCode": "EN"
+        "currency": "USD"
     },
     "commands": [
         {
