@@ -2,7 +2,7 @@ const arvish = require('arvish');
 const cheerio = require('cheerio');
 const got = require('got');
 
-const listAPI = `https://eshop-prices.com/games?q={query}&currency=${process.env.currency}`;
+const listAPI = `https://eshop-prices.com/games?q={query}&currency=${process.env.countryCode}`;
 
 got(listAPI.replace('{query}', arvish.input), {
     headers: {

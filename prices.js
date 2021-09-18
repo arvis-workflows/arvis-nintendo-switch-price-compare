@@ -2,7 +2,7 @@ const arvish = require('arvish');
 const cheerio = require('cheerio');
 const got = require('got');
 
-const priceAPI = `https://eshop-prices.com/{query}?currency=${process.env.currency}`;
+const priceAPI = `https://eshop-prices.com/{query}?currency=${process.env.countryCode}`;
 
 got(priceAPI.replace('{query}', arvish.input), {
     headers: {
@@ -18,7 +18,7 @@ got(priceAPI.replace('{query}', arvish.input), {
     const listElems = $('.pointer').children('.price-value');
 
     for (const elem of listElems) {
-        const country = $(elem.parent.children[3]).text();
+        const country = $(elem.parent.children[3]).text().trim();
 
         const price = $(elem).text().trim();
         if (price.includes(' ')) {
